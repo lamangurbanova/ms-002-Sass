@@ -1,0 +1,95 @@
+// $main-color: rgb(101, 228, 22);
+
+// // @use "sass:map";
+
+// $myList: (
+//   "white": #fff,
+//   "black": #000,
+//   "green": #456353,
+// );
+
+// h1 {
+//   color: map.get($myList, "green");
+// }
+
+// span {
+//   color: $main-color;
+// }
+
+// ul {
+//   list-style: none;
+//   li {
+//     margin: 10px;
+//     a {
+//       text-decoration: none;
+//       &:hover {
+//       }
+//     }
+//   }
+// }
+
+// @mixin flexbox($align: center, $justify: center, $direction: row) {
+//   display: flex;
+//   flex-wrap: wrap;
+//   align-items: $align;
+//   justify-content: $justify;
+//   flex-direction: $direction;
+// }
+
+// .box {
+//   &__wrp {
+//     width: 500px;
+//     height: 200px;
+//     @include media-breakpoint-down(md) {
+//       width: 200px;
+//       background-color: #456353;
+//     }
+//     border: 1px solid red;
+//     @include flexbox($direction: column);
+//     &__header {
+//       width: 70px;
+//       height: 70px;
+//       border: 1px solid blue;
+//       & .title {
+//         color: red;
+//       }
+//     }
+//   }
+// }
+
+$mySize: 30px;
+
+h2 {
+  font-size: $mySize;
+}
+
+h1 {
+  $mySize: 40px !global;
+  font-size: $mySize;
+}
+
+span {
+  $mySize: 50px !global;
+  font-size: $mySize;
+}
+
+h3 {
+  font-size: $mySize;
+}
+
+h1 {
+  font: {
+    style: italic;
+    size: 25px;
+  }
+}
+
+.button {
+  padding: 10px 20px;
+  border-radius: 9px;
+}
+
+.button-green {
+  @extend .button;
+  background-color: rgb(11, 195, 11);
+}

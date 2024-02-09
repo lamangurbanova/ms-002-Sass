@@ -1,0 +1,29 @@
+h2 {
+  font-size: 30px;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+span {
+  font-size: 50px;
+}
+
+h3 {
+  font-size: 50px;
+}
+
+h1 {
+  font-style: italic;
+  font-size: 25px;
+}
+
+.button, .button-green {
+  padding: 10px 20px;
+  border-radius: 9px;
+}
+
+.button-green {
+  background-color: rgb(11, 195, 11);
+}/*# sourceMappingURL=main.css.map */
